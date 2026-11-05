@@ -1,11 +1,12 @@
 # 如何理解代理 IP 是什么
 
-- 首先必须说明：代理 IP**≠** VPN
+
+- 首先必须说明：代理 IP **≠** VPN
 
 
 ## 代理 IP
 
-::: danger 代理 IP不是用来翻墙的！！
+::: danger 代理 IP不是用来翻墙的！！！
 :::
 
 - 代理 IP通常是socks5、HTTP协议，也有HTTPS协议
@@ -25,9 +26,9 @@
 
 - 大部分人使用的是机场订阅，商家会提供一个订阅链接地址，由你自己导入到各类工具
 
-    机场订阅链接示例：https://sub.abcdeg.com:1234/wokaozhesha/token=1234567890987654321
+    机场订阅链接示例：`https://sub.abcdeg.com:1234/wokaozhesha/token=1234567890987654321`
 
-- 订阅链接配置在各类代理工具内
-  PC：Clash Verge、v2rayN等
-  Android：v2rayNG、Clash for Android、Nekobox等
-  IOS：shadowrocket等
+- 订阅链接配置在各类代理工具内：<br>
+**PC 端**：Clash Verge、v2rayN 等<br>
+**Android 端**：v2rayNG、Clash for Android、Nekobox 等<br>
+**iOS 端**：Shadowrocket 等
