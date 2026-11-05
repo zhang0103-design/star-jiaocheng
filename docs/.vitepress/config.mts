@@ -29,7 +29,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'ProxyDoc',
-  description: '代理 IP 使用与配置知识库',
+  description: '代理 IP 使用与配置',
 
   // 站点 <head>：favicon
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]],
@@ -67,6 +67,7 @@ export default defineConfig({
           items: [
             { text: '快速开始', link: '/guide/quick-start' },
             { text: '基础知识', link: '/guide/proxy-basics' },
+            { text: '代理IP', link: '/help/proxy' },
           ],
         },
       ],
@@ -87,10 +88,11 @@ export default defineConfig({
       ],
       '/help/': [
         {
-          text: '问题排查',
+          text: '排查与帮助',
           items: [
             { text: '连接失败排查', link: '/help/troubleshooting' },
             { text: '常见问题', link: '/help/faq' },
+            { text: '代理IP', link: '/help/proxy' },
           ],
         },
       ],
@@ -126,7 +128,7 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: 'ProxyDoc · 代理 IP 使用与配置知识库',
+      message: 'ProxyDoc · 代理 IP 使用与配置',
       copyright: 'Copyright © 2026 ProxyDoc',
     },
   },
