@@ -34,10 +34,10 @@ ProxyDoc/
     ├── guide/                       # 入门指南
     │   ├── quick-start.md
     │   └── proxy-basics.md
-    ├── mobile/                      # 手机端教程
+    ├── mobile/                      # 手机端
     │   ├── android-chain.md
     │   └── ios-chain.md
-    ├── desktop/                     # PC 端教程（后续扩展）
+    ├── desktop/                     # PC 端（后续扩展）
     │   └── README.md
     └── help/                        # 排查与常见问题
         ├── troubleshooting.md
@@ -129,11 +129,11 @@ npm run docs:preview
 
 ## 如何扩展 PC 端分类
 
-后续新增 PC 教程时：
+后续新增 PC 内容时：
 
 1. 在 `docs/desktop/` 下创建 Markdown 文件（如 `windows-proxy.md`）；
 2. 在 `config.mts` 的 `sidebar['/desktop/']` 里加对应条目；
-3. 需要的话在顶部 `nav` 的「PC 端教程」下加子项。
+3. 需要的话在顶部 `nav` 的「PC 端」下加子项。
 
 无需改动网站框架。
 
@@ -173,4 +173,4 @@ Cloudflare Pages 检测到 GitHub 变更后会自动重新构建并发布，无�
 
 ## 免责声明
 
-本网站提供代理 IP 技术知识和客户端配置教程，不保证代理服务器始终在线，不保证第三方网站一定允许代理 IP 访问，也不保证第三方账号不会触发风控。代理连通性与第三方业务结果属于不同问题。用户应遵守所在地法律法规及相关平台服务条款。
+本网站提供代理 IP 技术知识和客户端配置，不保证代理服务器始终在线，不保证第三方网站一定允许代理 IP 访问，也不保证第三方账号不会触发风控。代理连通性与第三方业务结果属于不同问题。用户应遵守所在地法律法规及相关平台服务条款。

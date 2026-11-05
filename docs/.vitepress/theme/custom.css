@@ -77,3 +77,13 @@ html,
 body {
   overflow-x: hidden;
 }
+
+/* 首页「新手入门路线」链接：取消蓝字下划线 */
+.vp-doc .route-list a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.vp-doc .route-list a:hover {
+  color: var(--vp-c-brand-1);
+}

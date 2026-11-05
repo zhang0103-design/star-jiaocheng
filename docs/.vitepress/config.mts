@@ -43,13 +43,13 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/guide/quick-start' },
       {
-        text: '手机端教程',
+        text: '手机端',
         items: [
           { text: 'Android 链式代理', link: '/mobile/android-chain' },
           { text: 'iOS 链式代理', link: '/mobile/ios-chain' },
         ],
       },
-      { text: 'PC 端教程', link: '/desktop/' },
+      { text: 'PC 端', link: '/desktop/' },
       {
         text: '问题排查',
         items: [
@@ -59,7 +59,7 @@ export default defineConfig({
       },
     ],
 
-    // 侧边栏：按目录分组，保证两次点击内找到教程
+    // 侧边栏：按目录分组，保证两次点击内找到
     sidebar: {
       '/guide/': [
         {
@@ -72,7 +72,7 @@ export default defineConfig({
       ],
       '/mobile/': [
         {
-          text: '手机端教程',
+          text: '手机端',
           items: [
             { text: 'Android 链式代理', link: '/mobile/android-chain' },
             { text: 'iOS 链式代理', link: '/mobile/ios-chain' },
@@ -81,8 +81,8 @@ export default defineConfig({
       ],
       '/desktop/': [
         {
-          text: 'PC 端教程',
-          items: [{ text: 'PC 端教程（即将更新）', link: '/desktop/' }],
+          text: 'PC 端',
+          items: [{ text: 'PC 端（即将更新）', link: '/desktop/' }],
         },
       ],
       '/help/': [
