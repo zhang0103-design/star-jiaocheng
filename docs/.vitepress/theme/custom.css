@@ -1,0 +1,79 @@
+/* ================================================================
+   ProxyDoc 主题样式
+   覆盖 VitePress 默认主题：简洁明亮、蓝白配色、适配手机与 PC。
+   ================================================================ */
+
+:root {
+  /* 品牌色：蓝色 */
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #1d4ed8;
+  --vp-c-brand-soft: rgba(37, 99, 235, 0.12);
+
+  /* 正文：深灰 */
+  --vp-c-text-1: #1f2937;
+  --vp-c-text-2: #4b5563;
+
+  /* 整体布局最大宽度 */
+  --vp-layout-max-width: 1440px;
+}
+
+.dark {
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #93c5fd;
+  --vp-c-brand-soft: rgba(96, 165, 250, 0.16);
+
+  --vp-c-text-1: #e5e7eb;
+  --vp-c-text-2: #9ca3af;
+}
+
+/* 图片：圆角 + 细边框，自适应宽度；点击看大图由 VitePress 自带 */
+.vp-doc img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* 表格：移动端横向滚动，避免溢出 */
+.vp-doc .vp-table {
+  overflow-x: auto;
+}
+
+/* 代码块：横向滚动保护 */
+.vp-doc div[class*='language-'] {
+  overflow-x: auto;
+}
+
+/* 视频：自适应宽度（配合文章内的 <video class="vp-video"> 使用） */
+.vp-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  background: #000;
+}
+
+/* 流程图：居中、等宽、浅色卡片样式 */
+.flow-block {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  overflow-x: auto;
+}
+
+.flow-block pre {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+/* 防止移动端整体横向溢出 */
+html,
+body {
+  overflow-x: hidden;
+}
